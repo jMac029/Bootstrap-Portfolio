@@ -1,14 +1,17 @@
 /* My Own Custom Styles */
 
+/* Adjustments to Nav Menu and styling social menu breaker */
 #social-menu {
 	margin-top: 15px;
 	color: #999;
 }
 
+/* Background Section font color*/
 #background {
 	color: #fff;
 }
 
+/* Background colors for other section divs */
 .bg-secondary {
 	background-color: #4A677F;
 }
