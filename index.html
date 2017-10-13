@@ -120,10 +120,10 @@
                     <h1>About</h1>
                     <hr class="small">
                     <h4>
-                      With nearly a decades experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented and highly motivated technologiest. 
+                      With nearly a decades experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented and highly motivated technologist. 
                     </h4>
                     <h4>
-                      Recently taken up the challenge of a coding bootcamp to expand his skills even further into Full Stack Web Development. Learning such technologies as JavaScript, React, MongoDB, Node and Express.
+                      Recently taken up the challenge of a coding bootcamp to expand his skills even further into Full Stack Web Development. Learning technologies as JavaScript, React, MongoDB, Node and Express also known as the MERN stack.
                     </h4>
                     <h4>
                       Be sure to check back and see all the awesome things James will accomplish in the next six months as he expands his horizons to expand his career and potentials.
@@ -296,7 +296,7 @@
                 <h1>Background</h1>
                 <hr class="small">
                 <h4>
-                    With nearly a decades experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented and highly motivated technologiest.
+                    With nearly a decades experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented and highly motivated technologist.
                 </h4>
                 <h3>B.A. Communication Studies | Sonoma State University, 2005</h3>
                 <h3>Full Stack Web Development Coding Bootcamp | UC Irvine, 2018</h3>
@@ -373,29 +373,36 @@
             <div class="row">
                 <div class="col-sm-6 col-xs-12 text-center">
                     <!-- Contact Form -->
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" id="contact-form" method="post" action="contact.php" role="form">
                       <div class="form-group">
-                        <label for="input" class="col-xs-6 control-label">Name</label>
+                        <label for="form_name" class="col-xs-6 control-label">Name *</label>
                             <div class="col-xs-6">
-                              <input type="text" class="form-control" id="input" placeholder="Name">
+                              <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required" data-error="name is required.">
+                            <div class="help-block with-errors"></div>
                             </div>
                       </div>
                       <div class="form-group">
-                        <label for="inputEmail" class="col-xs-6 control-label">Email</label>
+                        <label for="form_email" class="col-xs-6 control-label">Email *</label>
                             <div class="col-xs-6">
-                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                              <input id="form_email" type="email" name="email" class="form-control" placeholder="example@domain.com *" required="required" data-error="a valid email is required.">
+                            <div class="help-block with-errors"></div>
                             </div>
                       </div>
                       <div class="form-group">
-                        <label for="input" class="col-xs-6 control-label">Message</label>
+                        <label for="form_message" class="col-xs-6 control-label">Message *</label>
                         <div class="col-xs-6">
-                          <textarea class="form-control" rows="3" placeholder="Message">
-                              
-                          </textarea>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="3" required="required" data-error="Please,leave a message."></textarea>
+                            <div class="help-block with-errors"></div>
                         </div>
                       </div>
+                      <div class="form-group">
                         <div class="col-xs-offset-6 col-xs-6">
-                          <button type="submit" class="btn btn-default">Submit</button>
+                          <input id="submit" name="submit" type="submit" value="Send" class="btn btn-default">
+                        </div>
+                       </div>
+                       <div class="form-group">
+                            <div class="col-xs-6 col-xs-offset-6">
+                            </div>
                         </div>
                     </form>
                 </div> 
@@ -441,7 +448,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-    <!-- Custom Theme JavaScript -->
+    <!-- Bootstrap Validator Script-->
+    <script type="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+
+
+    <!-- Custom Theme JavaScript and jQuery -->
     <script>
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
@@ -492,6 +503,50 @@
                 });
             }
         }
+    });
+    // Contact Form submit validation to pass to the php
+    $(function () {
+
+        // init the validator
+
+        $('#contact-form').validator();
+
+
+        // when the form is submitted
+        $('#contact-form').on('submit', function (e) {
+
+            // if the validator does not prevent form submit
+            if (!e.isDefaultPrevented()) {
+                var url = "contact.php";
+
+                // POST values in the background the the script URL
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    data: $(this).serialize(),
+                    success: function (data)
+                    {
+                        // data = JSON object that contact.php returns
+
+                        // we recieve the type of the message: success x danger and apply it to the 
+                        var messageAlert = 'alert-' + data.type;
+                        var messageText = data.message;
+
+                        // let's compose Bootstrap alert box HTML
+                        var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
+                        
+                        // If we have messageAlert and messageText
+                        if (messageAlert && messageText) {
+                            // inject the alert to .messages div in our form
+                            $('#contact-form').find('.messages').html(alertBox);
+                            // empty the form
+                            $('#contact-form')[0].reset();
+                        }
+                    }
+                });
+                return false;
+            }
+        })
     });
     </script>
 
