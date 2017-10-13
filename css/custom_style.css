@@ -1,4 +1,4 @@
-/* My Own Custom Styles */
+/* My Own Custom Styles to enhance the Start Bootstrap Theme */
 
 /* Adjustments to Nav Menu and styling social menu breaker */
 #social-menu {
@@ -21,14 +21,17 @@
 	background-color: #4A677F;
 }
 
+/* Background Color for Footer area*/
 .bg-third {
 	background-color: #FF6761;
 }
 
+/* A little less padding for the footer area */
 #contact {
 	padding-top: 50px;
 }
 
+/* Changed the color of the social media icons in the footer so that they pop */
 #footer-social-links a {
 	color: #fff;
 }
