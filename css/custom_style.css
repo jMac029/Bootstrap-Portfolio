@@ -1,2 +1,18 @@
 /* My Own Custom Styles */
 
+#social-menu {
+	margin-top: 15px;
+	color: #999;
+}
+
+#background {
+	color: #fff;
+}
+
+.bg-secondary {
+	background-color: #4A677F;
+}
+
+.bg-third {
+	background-color: #FF6761;
+}
