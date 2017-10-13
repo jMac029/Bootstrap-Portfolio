@@ -92,19 +92,31 @@
             <h1 class="site-title">James McMillan</h1>
             <h3 class="site-subtitle">Full Stack Web Developer</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">About</a>
-            <a href="#skills" class="btn btn-dark btn-lg">Skills</a>
-            <a href="#background" class="btn btn-dark btn-lg">Background</a>
-            <a href="#work" class="btn btn-dark btn-lg">Work</a>
-            <a href="#contact" class="btn btn-dark btn-lg">Contact</a>
+            <ul class="list-inline" id="header-buttons">
+            <li>
+                <a href="#about" class="btn btn-dark btn-lg">About</a>
+            </li>
+            <li>
+                <a href="#skills" class="btn btn-dark btn-lg">Skills</a>
+            </li>
+            <li>
+                <a href="#background" class="btn btn-dark btn-lg">Background</a>
+            </li>
+            <li>
+                <a href="#work" class="btn btn-dark btn-lg">Work</a>
+            </li>
+            <li>
+                <a href="#contact" class="btn btn-dark btn-lg">Contact</a>
+            </li>
+            </ul>
         </div>
     </header>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 text-center">
+                <div class="col-sm-6 col-xs-12 text-center">
                     <h1>About</h1>
                     <hr class="small">
                     <h4>
@@ -117,7 +129,7 @@
                       Be sure to check back and see all the awesome things James will accomplish in the next six months as he expands his horizons to expand his career and potentials.
                     </h4>
                 </div>
-                <div class="col-xs-6 pull-left">
+                <div class="col-sm-6 col-xs-12 text-center">
                     <img src="img/james.png" class="img-rounded" width="70%" alt="James McMillan">
                 </div>
             </div>
@@ -277,7 +289,7 @@
         <!-- /.container -->
     </section>
 
-    <!-- Callout -->
+    <!-- Background Info Section -->
     <section id="background" class="about bg-secondary">
         <div class="container">
             <div class="col-xs-12 text-center">
@@ -353,35 +365,44 @@
         <!-- /.container -->
     </section>
 
-    <!-- Call to Action -->
-    <aside class="call-to-action bg-primary">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-dark">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
-                </div>
-            </div>
-        </div>
-    </aside>
-
     <!-- Footer -->
-    <footer id="contact">
+    <footer id="contact" class="bg-third">
+        <h1 class="text-center">Contact</h1>
+        <hr class="small">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Contact</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <!-- Contact Form -->
+                    <form class="form-horizontal">
+                      <div class="form-group">
+                        <label for="input" class="col-xs-6 control-label">Name</label>
+                            <div class="col-xs-6">
+                              <input type="text" class="form-control" id="input" placeholder="Name">
+                            </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="inputEmail" class="col-xs-6 control-label">Email</label>
+                            <div class="col-xs-6">
+                              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="input" class="col-xs-6 control-label">Message</label>
+                        <div class="col-xs-6">
+                          <textarea class="form-control" rows="3" placeholder="Message">
+                              
+                          </textarea>
+                        </div>
+                      </div>
+                        <div class="col-xs-offset-6 col-xs-6">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
+                </div> 
+                <br>
+                <div class="col-sm-6 col-xs-12 text-center">
+                    <h3>Let's Get Social</h3>
+                    <ul class="list-inline" id="footer-social-links">
                         <li>
                             <a href="https://www.linkedin.com/in/jamesdmcmillan/" target="_blank"><i class="fa fa-linkedin-square fa-fw fa-3x"></i></a>
                         </li>
@@ -391,6 +412,8 @@
                         <li>
                             <a href="https://github.com/jMac029" target="_blank"><i class="fa fa-github fa-fw fa-3x"></i></a>
                         </li>
+                    </ul>
+                    <ul class="list-inline" id="footer-social-links">
                         <li>
                             <a href="https://www.instagram.com/jmacthewanderer/" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
                         </li>
@@ -401,10 +424,12 @@
                             <a href="https://stackoverflow.com/users/8365957/jmacthedev" target="_blank"><i class="fa fa-stack-overflow fa-fw fa-3x"></i></a>
                         </li>
                     </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; James McMillan 2017</p>
                 </div>
             </div>
+        </div>
+        <div class="col-xs-12 text-center">
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; James McMillan 2017</p>
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>

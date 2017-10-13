@@ -6,6 +6,11 @@
 	color: #999;
 }
 
+/* Header Button Sizing for Mobile Repsonsive */
+#header-buttons li {
+	padding-top: 5px;
+}
+
 /* Background Section font color*/
 #background {
 	color: #fff;
@@ -18,4 +23,12 @@
 
 .bg-third {
 	background-color: #FF6761;
+}
+
+#contact {
+	padding-top: 50px;
+}
+
+#footer-social-links a {
+	color: #fff;
 }
