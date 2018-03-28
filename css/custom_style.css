@@ -1,9 +1,33 @@
 /* My Own Custom Styles to enhance the Start Bootstrap Theme */
 
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-weight: 100;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif !important;
+    font-weight: 800;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif !important;
+    font-weight: 400;
+}
+
+li {
+    font-family: 'Merriweather', serif;
+    font-weight: 300; 
+}
+
 /* Adjustments to Nav Menu and styling social menu breaker */
 #social-menu {
 	margin-top: 15px;
 	color: #999;
+}
+
+#menu-header {
+	font-weight: 800;
 }
 
 /* Header Button Sizing for Mobile Repsonsive */
@@ -11,9 +35,19 @@
 	padding-top: 5px;
 }
 
+.site-subtitle {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
 /* Background Section font color*/
 #background {
 	color: #fff;
+}
+
+svg{
+	fill: #337ab7;
 }
 
 /* Background colors for other section divs */
@@ -31,7 +65,9 @@
 	padding-top: 50px;
 }
 
-/* Changed the color of the social media icons in the footer so that they pop */
-#footer-social-links a {
+a {
 	color: #fff;
 }
+
+/* Changed the color of the social media icons in the footer so that they pop */
+

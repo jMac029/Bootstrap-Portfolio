@@ -1,0 +1,30 @@
+{
+  "name": "Bootstrap-Portfolio",
+  "version": "1.0.0",
+  "description": "2nd Homework Assignment for UCI Coding Bootcamp - Make a Portfolio site using BootStrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\"",
+    "//": "Hello! If you are having trouble running this command. Try changing Firefox Developer Edition to FirefoxDeveloperEdition",
+    "start:darwin:linux": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jMac029/Bootstrap-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jMac029/Bootstrap-Portfolio/issues"
+  },
+  "homepage": "https://github.com/jMac029/Bootstrap-Portfolio#readme",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "g": "^2.0.1",
+    "npm": "^5.8.0",
+    "run-script-os": "^1.0.3"
+  }
+}

@@ -24,11 +24,18 @@
     <link rel="stylesheet" type="text/css" href="css/custom_style.css">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700,800|Merriweather:300,400,700,900" rel="stylesheet">
 
-    <!-- Extra Custom Fonts for Programmer Icons mfizz http://fizzed.com/oss/font-mfizz -->
-    <link rel="stylesheet" type="text/css" href="font-mfizz/dist/font-mfizz.css">
+    <!-- Extra Custom Fonts for Programmer Icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="//code.simplesvg.com/1/1.0.0-beta5/simple-svg.min.js"></script>
+
+    <!-- jQuery -->
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
 
 
 </head>
@@ -41,43 +48,43 @@
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$( "#menu-close").click();>James McMillan</a>
+                <a id="menu-header" href="#top" onclick=$("#menu-close").click()>james mcmillan</a>
             </li>
             <li>
-                <a href="#about" onclick=$( "#menu-close").click();>About</a>
+                <a href="#about" onclick=$("#menu-close").click();>about</a>
             </li>
             <li>
-                <a href="#skills" onclick=$( "#menu-close").click();>Services</a>
+                <a href="#tech" onclick=$("#menu-close").click();>tech</a>
             </li>
             <li>
-                <a href="#background" onclick=$( "#menu-close").click();>Background</a>
+                <a href="#background" onclick=$("#menu-close").click();>background</a>
             </li>
             <li>
-                <a href="#work" onclick=$( "#menu-close").click();>Work</a>
+                <a href="#work" onclick=$("#menu-close").click();>work</a>
             </li>
             <li>
-                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+                <a href="#contact" onclick=$("#menu-close").click();>contact</a>
             </li>
             <li>
-                <h4 id="social-menu">Social</h4>
+                <p id="social-menu">social</p>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/jamesdmcmillan/" target="_blank><i class=" fa fa-linkedin-square fa-fw fa-2x "></i></a>
+                <a href="https://www.linkedin.com/in/jamesdmcmillan/" target="_blank"><i class=" fab fa-linkedin fa-fw fa-2x "></i></a>
             </li>
             <li>
-                <a href="https://twitter.com/jMacTheWanderer " target="_blank "><i class="fa fa-twitter fa-fw fa-2x "></i></a>
+                <a href="https://twitter.com/jMacTheWanderer" target="_blank"><i class="fab fa-twitter fa-fw fa-2x "></i></a>
             </li>
             <li>
-                <a href="https://github.com/jMac029 " target="_blank "><i class="fa fa-github fa-fw fa-2x "></i></a>
+                <a href="https://github.com/jMac029" target="_blank"><i class="fab fa-github fa-fw fa-2x "></i></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/jmacthewanderer/ " target="_blank "><i class="fa fa-instagram fa-fw fa-2x "></i></a>
+                <a href="https://www.instagram.com/jmacthewanderer/" target="_blank"><i class="fab fa-instagram fa-fw fa-2x "></i></a>
             </li>
             <li>
-                <a href="https://jmacthewanderer.blog/ " target="_blank "><i class="fa fa-wordpress fa-fw fa-2x "></i></a>
+                <a href="https://jmacthewanderer.blog/" target="_blank"><i class="fab fa-wordpress fa-fw fa-2x "></i></a>
             </li>
             <li>
-                <a href="https://stackoverflow.com/users/8365957/jmacthedev " target="_blank "><i class="fa fa-stack-overflow fa-fw fa-2x "></i></a>
+                <a href="https://stackoverflow.com/users/8365957/jmacthedev" target="_blank"><i class="fab fa-stack-overflow fa-fw fa-2x "></i></a>
             </li>
         </ul>
     </nav>
@@ -85,24 +92,24 @@
     <!-- Header -->
     <header id="top " class="header ">
         <div class="text-vertical-center ">
-            <h1 class="site-title ">James McMillan</h1>
-            <h3 class="site-subtitle ">Full Stack Web Developer</h3>
+            <h1 class="site-title">james mcmillan</h1>
+            <p class="site-subtitle ">Full Stack Web Developer</p>
             <br>
             <ul class="list-inline " id="header-buttons ">
             <li>
-                <a href="#about " class="btn btn-dark btn-lg ">About</a>
+                <a href="#about " class="btn btn-dark btn-lg ">about</a>
             </li>
             <li>
-                <a href="#skills " class="btn btn-dark btn-lg ">Skills</a>
+                <a href="#tech " class="btn btn-dark btn-lg ">tech</a>
             </li>
             <li>
-                <a href="#background " class="btn btn-dark btn-lg ">Background</a>
+                <a href="#background " class="btn btn-dark btn-lg ">background</a>
             </li>
             <li>
-                <a href="#work " class="btn btn-dark btn-lg ">Work</a>
+                <a href="#work " class="btn btn-dark btn-lg ">work</a>
             </li>
             <li>
-                <a href="#contact " class="btn btn-dark btn-lg ">Contact</a>
+                <a href="#contact " class="btn btn-dark btn-lg ">contact</a>
             </li>
             </ul>
         </div>
@@ -113,17 +120,17 @@
         <div class="container ">
             <div class="row ">
                 <div class="col-sm-6 col-xs-12 text-center ">
-                    <h1>About</h1>
+                    <h1>about</h1>
                     <hr class="small ">
-                    <h4>
+                    <p>
                       With nearly a decade of experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented, highly motivated and proven technologist. 
-                    </h4>
-                    <h4>
-                      Recently taken up the challenge of a coding bootcamp to expand his skills even further into Full Stack Web Development. Learning technologies as JavaScript, React, MongoDB, Node and Express also known as the MERN stack.
-                    </h4>
-                    <h4>
-                      Be sure to check back and see all the awesome things James will accomplish in the next six months as he expands his horizons to expand his career and potentials.
-                    </h4>
+                    </p>
+                    <p>
+                      Recently he has completed a certificate in Full Stack Web Development expanding his skills. Now armed technologies as JavaScript, React, MongoDB, Node and Express (also known as the MERN stack). He is ready to take on the budding tech industry in Orange County, CA.
+                    </p>
+                    <p>
+                      Along with experience in administering Linux web servers with Nginx, MySQL and PHP or LEMP stack to serve dozens of web properties to millions of visitors annually. He is passionate for cloud technologies and microservices with the ability to scale applications to meet the demands of customers and the companies that serve them.
+                    </p>
                 </div>
                 <div class="col-sm-6 col-xs-12 text-center ">
                     <img src="img/james.png " class="img-rounded " width="70% " alt="James McMillan ">
@@ -136,21 +143,21 @@
 
     <!-- Skills -->
     <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-    <section id="skills " class="services bg-primary ">
+    <section id="tech " class="services bg-primary ">
         <div class="container ">
             <div class="row text-center ">
                 <div class="col-lg-10 col-lg-offset-1 ">
-                    <h1>Skills</h1>
+                    <h1>tech</h1>
                     <hr class="small ">
                     <div class="row ">
                         <div class="col-sm-3 col-xs-4 ">
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa fa-html5 fa-stack-1x text-primary "></i>
+                                <i class="fab fa-html5 fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>HTML 5</strong>
+                                    HTML 5
                                 </h4>
                             </div>
                         </div>
@@ -158,10 +165,10 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa fa-css3 fa-stack-1x text-primary "></i>
+                                <i class="fab fa-css3-alt fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>CSS 3</strong>
+                                    CSS 3
                                 </h4>
                             </div>
                         </div>
@@ -169,10 +176,43 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="icon-javascript fa-stack-1x text-primary " style="font-size: 50px; padding-left: 9px; padding-top: 1px; "></i>
+                                <i class="fab fa-js-square fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>JavaScript</strong>
+                                    JavaScript
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-python fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  Python
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="devicon-swift-plain fa-stack-1x text-primary " style="font-size: 40px; padding-top: 20px;"></i>
+                          </span>
+                              <h4>
+                                  Swift
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                            <div class="service-item ">
+                                <span class="fa-stack fa-3x ">
+                                <i class="fa fa-circle fa-stack-2x "></i>
+                                <i class="fas fa-code-branch fa-stack-1x text-primary "></i>
+                            </span>
+                                <h4>
+                                    Git
                                 </h4>
                             </div>
                         </div>
@@ -180,10 +220,43 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-git fa-stack-1x text-primary "></i>
+                                <i class="fab fa-wordpress fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>Git</strong>
+                                    Wordpress
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-app-store-ios fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  iOS
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-react fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  React Native
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                            <div class="service-item ">
+                                <span class="fa-stack fa-3x ">
+                                <i class="fa fa-circle fa-stack-2x "></i>
+                                <i class="fa devicon-mysql-plain fa-stack-1x text-primary " style="font-size: 50px; padding-top: 18px; "></i>
+                            </span>
+                                <h4>
+                                    MySQL
                                 </h4>
                             </div>
                         </div>
@@ -191,10 +264,76 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa fa-wordpress fa-stack-1x text-primary "></i>
+                                <i class="fa devicon-mongodb-plain fa-stack-1x text-primary " style="font-size: 50px; padding-top: 18px; "></i>
                             </span>
                                 <h4>
-                                    <strong>Wordpress</strong>
+                                    MongoDB
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fas fa-fire fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  Firebase
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                            <div class="service-item ">
+                                <span class="fa-stack fa-3x ">
+                                <i class="fa fa-circle fa-stack-2x "></i>
+                                <i class="fab fa-linux fa-stack-1x text-primary "></i>
+                            </span>
+                                <h4>
+                                    Linux CentOS
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab devicon-nginx-original fa-stack-1x text-primary " style="font-size: 50px; padding-top: 18px;"></i>
+                          </span>
+                              <h4>
+                                  NGINX
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-docker fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  Docker
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-expeditedssl fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  SSL
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                            <div class="service-item ">
+                                <span class="fa-stack fa-3x ">
+                                <i class="fa fa-circle fa-stack-2x "></i>
+                                <i class="fa devicon-bootstrap-plain fa-stack-1x text-primary " style="font-size: 45px; padding-top: 20px; "></i>
+                            </span>
+                                <h4>
+                                    Bootstrap
                                 </h4>
                             </div>
                         </div>
@@ -202,10 +341,10 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-mysql fa-stack-1x text-primary " style="font-size: 50px; padding-left: 5px; "></i>
+                                <i class="fa devicon-jquery-plain fa-stack-1x text-primary " style="font-size: 45px; padding-top: 20px; "></i>
                             </span>
                                 <h4>
-                                    <strong>MySQL</strong>
+                                    jQuery
                                 </h4>
                             </div>
                         </div>
@@ -213,10 +352,10 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-mongodb fa-stack-1x text-primary " style="font-size: 50px; "></i>
+                                <i class="fab fa-react fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>MongoDB</strong>
+                                    ReactJS
                                 </h4>
                             </div>
                         </div>
@@ -224,56 +363,100 @@
                             <div class="service-item ">
                                 <span class="fa-stack fa-3x ">
                                 <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-centos fa-stack-1x text-primary " style="font-size: 50px; "></i>
+                                <i class="fab fa-node-js fa-stack-1x text-primary "></i>
                             </span>
                                 <h4>
-                                    <strong>CentOS</strong>
+                                    NodeJS
                                 </h4>
                             </div>
                         </div>
                         <div class="col-sm-3 col-xs-4 ">
-                            <div class="service-item ">
-                                <span class="fa-stack fa-3x ">
-                                <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-bootstrap fa-stack-1x text-primary " style="font-size: 50px; "></i>
-                            </span>
-                                <h4>
-                                    <strong>Bootstrap</strong>
-                                </h4>
-                            </div>
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab devicon-express-original fa-stack-1x text-primary " style="font-size: 40px; padding-top: 22px;"></i>
+                          </span>
+                              <h4>
+                                  expressJS
+                              </h4>
+                          </div>
                         </div>
                         <div class="col-sm-3 col-xs-4 ">
-                            <div class="service-item ">
-                                <span class="fa-stack fa-3x ">
-                                <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-jquery fa-stack-1x text-primary " style="font-size: 50px; "></i>
-                            </span>
-                                <h4>
-                                    <strong>jQuery</strong>
-                                </h4>
-                            </div>
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-stack-1x text-primary " style="padding-top: 7px;"><simple-svg data-icon="simple-icons:twilio"></simple-svg></i>
+                          </span>
+                              <h4>
+                                  Twilio
+                              </h4>
+                          </div>
                         </div>
                         <div class="col-sm-3 col-xs-4 ">
-                            <div class="service-item ">
-                                <span class="fa-stack fa-3x ">
-                                <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-reactjs fa-stack-1x text-primary " style="font-size: 50px; padding-right: 5px; "></i>
-                            </span>
-                                <h4>
-                                    <strong>ReactJS</strong>
-                                </h4>
-                            </div>
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fa fa-terminal fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  Terminal
+                              </h4>
+                          </div>
                         </div>
                         <div class="col-sm-3 col-xs-4 ">
-                            <div class="service-item ">
-                                <span class="fa-stack fa-3x ">
-                                <i class="fa fa-circle fa-stack-2x "></i>
-                                <i class="fa icon-nodejs fa-stack-1x text-primary " style="font-size: 50px; padding-left: 11px; padding-top: 4px; "></i>
-                            </span>
-                                <h4>
-                                    <strong>NodeJS</strong>
-                                </h4>
-                            </div>
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fa fa-stack-1x text-primary " style="padding-top: 7px;"><simple-svg data-icon="simple-icons:xcode"></simple-svg></i>
+                          </span>
+                              <h4>
+                                  Xcode
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fa devicon-visualstudio-plain fa-stack-1x text-primary " style="font-size: 40px; padding-top: 22px;"></i>
+                          </span>
+                              <h4>
+                                  Visual Studio Code
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-aws fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  AWS
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab devicon-heroku-original fa-stack-1x text-primary " style="font-size: 45px; padding-top: 20px;"></i>
+                          </span>
+                              <h4>
+                                  Heroku
+                              </h4>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-4 ">
+                          <div class="service-item ">
+                              <span class="fa-stack fa-3x ">
+                              <i class="fa fa-circle fa-stack-2x "></i>
+                              <i class="fab fa-slack-hash fa-stack-1x text-primary "></i>
+                          </span>
+                              <h4>
+                                  Slack
+                              </h4>
+                          </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
@@ -289,13 +472,13 @@
     <section id="background " class="about bg-secondary ">
         <div class="container ">
             <div class="col-xs-12 text-center ">
-                <h1>Background</h1>
+                <h1>background</h1>
                 <hr class="small ">
-                <h4>
-                    With nearly a decade of experience in Information Technology as a Systems Administrator in the Higher Education and Adversting industries. James is a multi-talented, highly motivated and proven technologist.
-                </h4>
-                <h3>B.A. Communication Studies | Sonoma State University, 2005</h3>
-                <h3>Full Stack Web Development Coding Bootcamp | UC Irvine, 2018</h3>
+                <p>
+                    James has a diverse background in trouble shooting problems with technology. He is always researching the latest tech and expanding is knowledge and experience to solve the little and the small.
+                </p>
+                <h4>B.A. Communication Studies | Sonoma State University, 2005</h4>
+                <h4>Full Stack Web Development Coding Bootcamp | UC Irvine, 2018</h4>
             </div>
         </div>
     </section>
@@ -305,7 +488,7 @@
         <div class="container ">
             <div class="row ">
                 <div class="col-lg-10 col-lg-offset-1 text-center ">
-                    <h1>Work</h1>
+                    <h1>work</h1>
                     <hr class="small ">
                     <div class="row ">
                         <div class="col-md-6 ">
@@ -390,8 +573,8 @@
     </section>
 
     <!-- Footer -->
-    <footer id="contact " class="bg-third ">
-        <h1 class="text-center ">Contact</h1>
+    <footer id="contact " class="bg-secondary ">
+        <h1 class="text-center ">contact</h1>
         <hr class="small ">
         <div class="container ">
             <div class="row ">
@@ -415,27 +598,26 @@
                 <br>
                 <!-- Social Media Links -->
                 <div class="col-sm-6 col-xs-12 text-center ">
-                    <h3>Let's Get Social</h3>
                     <ul class="list-inline " id="footer-social-links ">
                         <li>
-                            <a href="https://www.linkedin.com/in/jamesdmcmillan/ " target="_blank "><i class="fa fa-linkedin-square fa-fw fa-3x "></i></a>
+                            <a href="https://www.linkedin.com/in/jamesdmcmillan/ " target="_blank "><i class="fab fa-linkedin fa-fw fa-3x "></i></a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/jMacTheWanderer " target="_blank "><i class="fa fa-twitter fa-fw fa-3x "></i></a>
+                            <a href="https://twitter.com/jMacTheWanderer " target="_blank "><i class="fab fa-twitter fa-fw fa-3x "></i></a>
                         </li>
                         <li>
-                            <a href="https://github.com/jMac029 " target="_blank "><i class="fa fa-github fa-fw fa-3x "></i></a>
+                            <a href="https://github.com/jMac029 " target="_blank "><i class="fab fa-github fa-fw fa-3x "></i></a>
                         </li>
                     </ul>
                     <ul class="list-inline " id="footer-social-links ">
                         <li>
-                            <a href="https://www.instagram.com/jmacthewanderer/ " target="_blank "><i class="fa fa-instagram fa-fw fa-3x "></i></a>
+                            <a href="https://www.instagram.com/jmacthewanderer/ " target="_blank "><i class="fab fa-instagram fa-fw fa-3x "></i></a>
                         </li>
                         <li>
-                            <a href="https://jmacthewanderer.blog/ " target="_blank "><i class="fa fa-wordpress fa-fw fa-3x "></i></a>
+                            <a href="https://jmacthewanderer.blog/ " target="_blank "><i class="fab fa-wordpress fa-fw fa-3x "></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/users/8365957/jmacthedev " target="_blank "><i class="fa fa-stack-overflow fa-fw fa-3x "></i></a>
+                            <a href="https://stackoverflow.com/users/8365957/jmacthedev " target="_blank "><i class="fab fa-stack-overflow fa-fw fa-3x "></i></a>
                         </li>
                     </ul>
                 </div>
@@ -444,16 +626,14 @@
         <div class="col-xs-12 text-center ">
             <br>
             <br>
-            <p class="text-muted ">Copyright &copy; James McMillan 2017</p>
+            <p class="text-muted ">copyright &copy; james mcmillan 2018</p>
         </div>
         <a id="to-top " href="#top " class="btn btn-dark btn-lg "><i class="fa fa-chevron-up fa-fw fa-1x "></i></a>
     </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js "></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <!-- Bootstrap Validator Script to Validate the Contact Form -->
     <script type="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js "></script>
@@ -511,6 +691,22 @@
             }
         }
     });
+
+    //fix for anchor tags in Chrome browsers
+    $(function() {
+       $('a[href*="#"]:not([href="#"])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html, body').animate({
+               scrollTop: target.offset().top
+             }, 1000);
+             return false;
+           }
+         }
+       });
+     });
     </script>
 
 </body>
